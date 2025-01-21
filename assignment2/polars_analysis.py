@@ -1,4 +1,3 @@
-# this is where I am going to do the polars analysis and what not and all of that jazz
 import time
 import sys
 import constants
