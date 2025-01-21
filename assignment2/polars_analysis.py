@@ -11,9 +11,7 @@ def main():
     time1, time2 = validate_input()
 
     # read data from parquet file into pandas dataframe
-    #df = pd.read_parquet('../rplace.parquet', filters=[("timestamp", '>=', time1), ("timestamp", '<=', time2)])
     df = pl.read_parquet("../rplace.parquet", columns=constants.FIELDS).filter((pl.col("timestamp") >= time1) & (pl.col("timestamp") <= time2))
-    # print(df.head(10))
 
     mode_color = df["pixel_color"].mode()
     mode_coord = df["coordinate"].mode()
