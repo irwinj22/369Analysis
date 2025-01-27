@@ -4,7 +4,7 @@ import pyarrow as pa
 import polars as pl
 
 csv_file = "../2022_place_canvas_history.csv"
-parquet_file = "HAHA_BREAK"
+parquet_file = "rplace.parquet"
 
 DATESTRING_FORMAT = "%Y-%m-%d %H:%M:%S"
 BLOCK_SIZE = 75_000_000
@@ -18,7 +18,6 @@ num_times = 0
 id_dict = {}
 id_count = 0
 
-# TODO: just apply a function -- will this take too long? 
 def add_id_to_dict(id):
     global id_count
     if id not in id_dict:
@@ -28,9 +27,6 @@ def add_id_to_dict(id):
 
 try:
     for record_batch in csv_reader:
-        '''if num_times == 1:
-            break
-        num_times += 1'''
         print(f"Processing batch with {record_batch.num_rows} rows...")
 
         df = pl.from_arrow(record_batch)
@@ -65,8 +61,6 @@ try:
             )
             .drop("coordinate")
         )
-
-        # print(df.head(n=40))
 
         table = df.to_arrow()
 
