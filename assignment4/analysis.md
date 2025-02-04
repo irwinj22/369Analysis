@@ -5,7 +5,7 @@ CSC 369 \
 ### Why are the most painted pixels the most painted?
 #### An analysis of r/place 2022 
 
-*Note: reference numbers refer to code sections from accompanying [Jupyter notebook](analysis_code.ipynb), which hosts the code that is used to ground this analysis.*
+*Note: reference numbers refer to code sections from the accompanying [Jupyter notebook](analysis_code.ipynb), which hosts the code that is used to ground this analysis.*
 
 To decide why the most painted pixels were the most painted, we must first determine what the most painted pixels are:<sup>1</sup> 
 1. (0, 0) : 98,807 times painted
@@ -41,10 +41,10 @@ Looking back on the graph of type of color and number of pixels placed, it is ob
 
 ![img](images/connection_lost.png)
 
-Thus, it makes sense that white would be placed at pixel 1, as the coordinate (0, 0) corresponds to the white boarder that surrounds the image. However, why would users place so many white pixels? Wouldn't they just be placing white pixels on top of white pixels, effectively changing nothing? Well, I thought it was possible that pixel 1 was getting so much attention because it was the go-to placement for first-time users: users who has very little familiarity with the board and just wanted to participate. However, only 10% of the users who placed a pixel at (0, 0) did so with their first pixel.<sup>3</sup> So, while first-time usership may have contributed to pixel 1's usage, it was not the deciding factor. What, then, could explain the popularity of pixel 1? 
+Thus, it makes sense that white would be placed at pixel 1, as the coordinate (0, 0) corresponds to the white border that surrounds the image. However, why would users place so many white pixels? Wouldn't they just be placing white pixels on top of white pixels, effectively changing nothing? Well, I thought it was possible that pixel 1 was getting so much attention because it was the go-to placement for first-time users: users who had very little familiarity with the board and just wanted to participate. However, only 10% of the users who placed a pixel at (0, 0) did so with their first pixel.<sup>3</sup> So, while first-time usership may have contributed to pixel 1's usage, it was not the deciding factor. What, then, could explain the popularity of pixel 1? 
 
 Well, my best guess is that having the current-placed pixel on (0,0) became a sort of status symbol for the members of r/place. Why would that be? Well, for reasons similar to why I thought the pixel was being frequented by first-time users: it is highly available (it doesn't take long to find coordinate (0,0)) and a part of a border that doesn't need to change. Thus, it seems plausible that maintaining "ownership" over this highly accessible pixel became a demarcator of status among the users of r/place, leading to repeated placements at this location. 
 
 So, to summarize the findings of this analysis: 
-- pixel 1, located at (0,0) had repeated placements of white pixels in attempts to gain status
-- pixels 2 (359, 564) and 3 (349, 564) had repeated placements of black and teal pixels because followers of two different communites wanted the image to reflect their interests. 
+- pixel 1, located at (0,0), had repeated placements of white pixels in attempts to gain status
+- pixels 2 (359, 564) and 3 (349, 564) had repeated placements of black and teal pixels because followers of two different communities wanted the image to reflect their interests. 
