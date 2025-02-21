@@ -1,6 +1,6 @@
-James Irwin 
-Individual Analysis Proposal
-02.20.2025
+James Irwin    
+Individual Analysis Proposal     
+02.20.2025     
 
 1. The question I am trying to answer is: How does taxi usage in Chicago change from 2013 to 2023? To answer this question, I am going to be asking a series of sub-questions for each year, such as:
 	1. How many different taxis were used? 
